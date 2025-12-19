@@ -158,9 +158,9 @@ const { data, error } = await resend.emails.send({
                 SplitMuch Team
               </p>
               <div style="margin-top:12px;">
-                <a href="https://SplitMuch.muchukarthik.me" style="font-size:12px;color:#1877f2;text-decoration:none;font-weight:600;">Website</a>
+                <a href="https://splitmuch.onrender.com" style="font-size:12px;color:#1877f2;text-decoration:none;font-weight:600;">Website</a>
                 <span style="color:#ccd0d5;margin:0 8px;">•</span>
-                <a href="https://SplitMuch.muchukarthik.me/support" style="font-size:12px;color:#1877f2;text-decoration:none;font-weight:600;">Support</a>
+                <a href="https://splitmuch.onrender.com" style="font-size:12px;color:#1877f2;text-decoration:none;font-weight:600;">Support</a>
               </div>
               <p style="margin-top:16px;font-size:11px;color:#90949c;">
                 © 2025 SplitMuch. All rights reserved.
