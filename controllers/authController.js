@@ -70,121 +70,105 @@ const { data, error } = await resend.emails.send({
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Verify Your SplitMuch Account</title>
 </head>
-<body style="margin:0;padding:0;background:#f1f5f9;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0">
+<body style="margin:0;padding:0;background-color:#f0f2f5;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;">
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
     <tr>
       <td align="center" style="padding:40px 16px;">
         
-        <!-- Container -->
-        <table width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;background:#ffffff;border-radius:28px;overflow:hidden;box-shadow:0 20px 30px rgba(0,0,0,0.12);">
+        <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px;background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);border:1px solid #dddfe2;">
           
-          <!-- Header -->
           <tr>
-            <td style="background:linear-gradient(135deg,#4f46e5,#22c55e);padding:40px 32px;text-align:center;color:#ffffff;">
-              <div style="font-size:42px;line-height:1;">💸</div>
-              <h1 style="margin:12px 0 4px;font-size:30px;font-weight:800;letter-spacing:-0.5px;">
+            <td style="padding:40px 32px;text-align:center;border-bottom:1px solid #f0f2f5;">
+              <img src="https://splitmuch.onrender.com/splitmuch.png" alt="SplitMuch Logo" width="80" height="80" style="display:block;margin:0 auto;border-radius:16px;" />
+              <h1 style="margin:20px 0 8px;font-size:28px;font-weight:700;color:#1c1e21;letter-spacing:-0.5px;">
                 SplitMuch
               </h1>
-              <p style="margin:0;font-size:15px;opacity:0.95;">
-                Smarter way to split expenses with friends
+              <p style="margin:0;font-size:16px;color:#65676b;font-weight:500;">
+                The smarter way to split expenses with friends.
               </p>
             </td>
           </tr>
 
-          <!-- Body -->
           <tr>
             <td style="padding:40px 32px;">
-              <h2 style="margin-top:0;font-size:24px;color:#0f172a;">
-                Hey ${username}! 👋
+              <h2 style="margin-top:0;font-size:22px;color:#1c1e21;font-weight:700;">
+                Hi ${username},
               </h2>
 
-              <p style="font-size:16px;line-height:26px;color:#334155;">
-                Welcome to <strong>SplitMuch</strong> — the easiest way to create groups, 
-                share expenses, track balances, and settle up without awkward conversations.
+              <p style="font-size:16px;line-height:24px;color:#4b4f56;">
+                Thanks for joining <strong>SplitMuch</strong>! We're excited to help you manage group expenses, track shared bills, and settle up fairly without the usual stress.
               </p>
 
-              <!-- Feature highlights -->
-              <table width="100%" cellpadding="0" cellspacing="0" style="margin:28px 0;">
-                <tr>
-                  <td style="padding:10px 0;font-size:15px;color:#475569;">
-                    ✅ Create groups for trips, roommates, or parties  
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:10px 0;font-size:15px;color:#475569;">
-                    📊 Track who owes whom — instantly  
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:10px 0;font-size:15px;color:#475569;">
-                    💰 Settle expenses fairly and transparently  
-                  </td>
-                </tr>
-              </table>
+              <div style="background-color:#f7f8fa;border-radius:8px;padding:20px;margin:30px 0;">
+                <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td style="padding:8px 0;font-size:14px;color:#1c1e21;">
+                      <span style="color:#1877f2;margin-right:8px;">●</span> Create groups for trips or roommates
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:8px 0;font-size:14px;color:#1c1e21;">
+                      <span style="color:#1877f2;margin-right:8px;">●</span> Track balances in real-time
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:8px 0;font-size:14px;color:#1c1e21;">
+                      <span style="color:#1877f2;margin-right:8px;">●</span> Chat and settle bills instantly
+                    </td>
+                  </tr>
+                </table>
+              </div>
 
-              <!-- CTA -->
               <div style="text-align:center;margin:40px 0;">
                 <a href="${verificationUrl}"
                   style="
                     display:inline-block;
-                    background:linear-gradient(135deg,#22c55e,#4f46e5);
+                    background-color:#1877f2;
                     color:#ffffff;
-                    padding:18px 38px;
-                    border-radius:14px;
+                    padding:14px 44px;
+                    border-radius:6px;
                     font-size:16px;
                     font-weight:700;
                     text-decoration:none;
-                    box-shadow:0 10px 20px rgba(79,70,229,0.35);
+                    transition: background-color 0.3s;
                   ">
-                  🚀 Verify My Account
+                  Verify Account
                 </a>
               </div>
 
-              <p style="font-size:14px;color:#475569;line-height:22px;">
-                ⏳ This verification link will expire in <strong>24 hours</strong>.
-                If you didn’t sign up for SplitMuch, you can safely ignore this email.
+              <p style="font-size:13px;color:#65676b;line-height:20px;text-align:center;">
+                This link will expire in 24 hours. If you did not create this account, please ignore this email.
               </p>
 
-              <hr style="border:none;border-top:1px solid #e5e7eb;margin:32px 0;" />
+              <hr style="border:none;border-top:1px solid #ebedf0;margin:32px 0;" />
 
-              <p style="font-size:13px;color:#64748b;text-align:center;line-height:20px;">
-                Button not working? Copy and paste this link:
+              <p style="font-size:12px;color:#90949c;text-align:center;line-height:18px;">
+                Button not working? Copy and paste this link into your browser:
                 <br />
-                <a href="${verificationUrl}" style="color:#4f46e5;word-break:break-all;">
+                <a href="${verificationUrl}" style="color:#1877f2;text-decoration:none;word-break:break-all;">
                   ${verificationUrl}
                 </a>
               </p>
             </td>
           </tr>
 
-          <!-- Footer -->
           <tr>
-            <td style="background:#f8fafc;padding:28px 24px;text-align:center;">
-              <p style="margin:0;font-size:14px;color:#475569;">
-                Built with ❤️ for friends who value fairness.
+            <td style="background-color:#f0f2f5;padding:32px 24px;text-align:center;border-top:1px solid #dddfe2;">
+              <p style="margin:0;font-size:13px;color:#65676b;font-weight:600;">
+                SplitMuch Team
               </p>
-
-              <div style="margin-top:14px;">
-                <a href="https://SplitMuch.muchukarthik.me"
-                   style="font-size:14px;color:#4f46e5;font-weight:600;text-decoration:none;">
-                  Visit Website
-                </a>
-                <span style="color:#cbd5e1;margin:0 10px;">•</span>
-                <a href="https://SplitMuch.muchukarthik.me/support"
-                   style="font-size:14px;color:#64748b;text-decoration:none;">
-                  Support
-                </a>
+              <div style="margin-top:12px;">
+                <a href="https://SplitMuch.muchukarthik.me" style="font-size:12px;color:#1877f2;text-decoration:none;font-weight:600;">Website</a>
+                <span style="color:#ccd0d5;margin:0 8px;">•</span>
+                <a href="https://SplitMuch.muchukarthik.me/support" style="font-size:12px;color:#1877f2;text-decoration:none;font-weight:600;">Support</a>
               </div>
-
-              <p style="margin-top:16px;font-size:12px;color:#94a3b8;">
+              <p style="margin-top:16px;font-size:11px;color:#90949c;">
                 © 2025 SplitMuch. All rights reserved.
               </p>
             </td>
           </tr>
 
         </table>
-        <!-- End Container -->
-
       </td>
     </tr>
   </table>
