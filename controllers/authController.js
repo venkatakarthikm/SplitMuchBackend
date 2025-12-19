@@ -59,7 +59,7 @@ exports.register = async (req, res) => {
 
 // ... inside exports.register ...
 const { data, error } = await resend.emails.send({
-  from: 'SplitMuch <support@SplitMuch.muchukarthik.me>',
+  from: 'SplitMuch <support@splitmuch.muchukarthik.me>',
   to: email,
   subject: '🎉 Welcome to SplitMuch — Verify Your Account',
   html: `
